@@ -1,0 +1,58 @@
+{
+  "checked": "2026-11-24",
+  "sources": {
+    "premiums": "https://www.cmhc-schl.gc.ca/en/finance-and-investing/mortgage-loan-insurance/mortgage-loan-insurance-homeownership-programs/premium-information-for-homeowner-and-small-rental-loans",
+    "price_cap_and_amortization": "https://cmhc-schl.gc.ca/en/finance-and-investing/mortgage-loan-insurance/mortgage-loan-insurance-homeownership-programs/cmhc-purchase",
+    "thirty_year_surcharge": "https://www.cmhc-schl.gc.ca/media-newsroom/notices/2024/cmhc-revises-homeowner-mortgage-loan-insurance-premiums"
+  },
+  "insured_price_cap_below": 1500000,
+  "homeowner_purchase": [
+    {
+      "ltv_up_to": 0.65,
+      "rate": 0.006
+    },
+    {
+      "ltv_up_to": 0.75,
+      "rate": 0.017
+    },
+    {
+      "ltv_up_to": 0.8,
+      "rate": 0.024
+    },
+    {
+      "ltv_up_to": 0.85,
+      "rate": 0.028
+    },
+    {
+      "ltv_up_to": 0.9,
+      "rate": 0.031
+    },
+    {
+      "ltv_up_to": 0.95,
+      "rate": 0.04
+    }
+  ],
+  "non_traditional_90_95": 0.045,
+  "over_25_year_surcharge": 0.002,
+  "provincial_sales_tax_on_premium": {
+    "ON": 0.08,
+    "QC": 0.09,
+    "SK": 0.06
+  },
+  "provincial_sales_tax_note": "Ontario, Quebec and Saskatchewan charge provincial sales tax on the premium. For other provinces the tool says to ask the lender rather than assume zero.",
+  "province_codes": [
+    "AB",
+    "BC",
+    "MB",
+    "NB",
+    "NL",
+    "NS",
+    "NT",
+    "NU",
+    "ON",
+    "PE",
+    "QC",
+    "SK",
+    "YT"
+  ]
+}

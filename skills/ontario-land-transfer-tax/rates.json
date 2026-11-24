@@ -1,0 +1,47 @@
+{
+  "checked": "2026-11-24",
+  "sources": {
+    "ontario_rates": "https://www.ontario.ca/document/land-transfer-tax",
+    "ontario_first_time_refund": "https://ontario.ca/document/land-transfer-tax/land-transfer-tax-refunds-first-time-homebuyers",
+    "toronto_rates": "https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rates-and-fees",
+    "toronto_first_time_rebate": "https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rebate-opportunities/"
+  },
+  "ontario": {
+    "first_time_refund_max": 4000,
+    "single_family": [
+      {"up_to": 55000, "rate": 0.005},
+      {"up_to": 250000, "rate": 0.01},
+      {"up_to": 400000, "rate": 0.015},
+      {"up_to": 2000000, "rate": 0.02},
+      {"up_to": null, "rate": 0.025}
+    ],
+    "other": [
+      {"up_to": 55000, "rate": 0.005},
+      {"up_to": 250000, "rate": 0.01},
+      {"up_to": 400000, "rate": 0.015},
+      {"up_to": null, "rate": 0.02}
+    ]
+  },
+  "toronto": {
+    "first_time_rebate_max": 4475,
+    "note": "Graduated rates above $3,000,000 for one or two single family homes took effect April 1, 2026.",
+    "single_family": [
+      {"up_to": 55000, "rate": 0.005},
+      {"up_to": 250000, "rate": 0.01},
+      {"up_to": 400000, "rate": 0.015},
+      {"up_to": 2000000, "rate": 0.02},
+      {"up_to": 3000000, "rate": 0.025},
+      {"up_to": 4000000, "rate": 0.044},
+      {"up_to": 5000000, "rate": 0.0545},
+      {"up_to": 10000000, "rate": 0.065},
+      {"up_to": 20000000, "rate": 0.0755},
+      {"up_to": null, "rate": 0.086}
+    ],
+    "other": [
+      {"up_to": 55000, "rate": 0.005},
+      {"up_to": 250000, "rate": 0.01},
+      {"up_to": 400000, "rate": 0.015},
+      {"up_to": null, "rate": 0.02}
+    ]
+  }
+}

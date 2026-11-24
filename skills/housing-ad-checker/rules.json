@@ -1,0 +1,134 @@
+{
+  "checked": "2026-11-24",
+  "sources": {
+    "ontario_human_rights_code": "https://www.ontario.ca/laws/statute/90h19",
+    "reco_advertising": "https://reco.on.ca/agents-and-brokerages/reco-bulletins/reco-bulletin-5-1-advertising-requirements",
+    "reco_permitted_terms": "https://www.reco.on.ca/agents-and-brokerages/reco-bulletins/reco-bulletin-5-2-permitted-terms",
+    "meta_special_ad_category": "https://developers.facebook.com/docs/marketing-api/audiences/special-ad-category"
+  },
+  "permitted_titles": [
+    "Broker",
+    "Broker Real Estate Agent",
+    "Broker of Record",
+    "REALTOR®",
+    "REALTOR® Broker",
+    "REALTOR® Salesperson",
+    "Real Estate Agent",
+    "Real Estate Broker",
+    "Real Estate Sales Representative",
+    "Real Estate Salesperson",
+    "Sales Representative",
+    "Salesperson"
+  ],
+  "meta_housing": {
+    "age_min": 18,
+    "age_max": 65,
+    "min_radius_km": 25
+  },
+  "protected_grounds": [
+    {
+      "ground": "age",
+      "patterns": [
+        "\\badults? only\\b",
+        "\\badult (lifestyle|living|community)\\b",
+        "\\b(perfect|ideal|great|made) for (a |an )?(young|older|senior|retired)\\b",
+        "\\b(perfect|ideal|great) for (retirees|seniors|students)\\b",
+        "\\bseniors?'? (building|community|residence)\\b",
+        "\\bmature (person|tenant|buyer|couple)s?\\b",
+        "\\bretirees? only\\b",
+        "\\bstudents? only\\b",
+        "\\byoung professionals?\\b",
+        "\\b(55|60|65)\\s?\\+"
+      ],
+      "fix": "Describe the home, not the person. \"Quiet building\" or \"low upkeep\" instead of who it suits. Age-restricted buildings can have legal exceptions; check before advertising one."
+    },
+    {
+      "ground": "family status or marital status",
+      "patterns": [
+        "\\bno (kids|children|families)\\b",
+        "\\b(perfect|ideal|great|made) for (a |an )?(young |small |growing |new )?(couples?|famil(y|ies)|singles?|newlyweds)\\b",
+        "\\bsingles? only\\b",
+        "\\bmarried couples?\\b",
+        "\\bempty.?nesters?\\b"
+      ],
+      "fix": "Say what the home has (\"3 bedrooms\", \"near schools\") instead of the kind of household it is for."
+    },
+    {
+      "ground": "disability",
+      "patterns": [
+        "\\bable.?bodied\\b",
+        "\\bno (wheelchairs?|disabled|disabilities)\\b",
+        "\\bmust be able to climb\\b",
+        "\\bno service (animals?|dogs?)\\b"
+      ],
+      "fix": "Describe the home's features (\"second floor, no elevator\") without saying who can or cannot live there."
+    },
+    {
+      "ground": "race, origin, citizenship, ethnicity or creed",
+      "patterns": [
+        "\\b(christian|muslim|jewish|hindu|sikh|catholic)s? (only|preferred|community|neighbou?rhood)\\b",
+        "\\bcanadians? only\\b",
+        "\\bno (immigrants|newcomers|foreigners)\\b",
+        "\\b(white|black|asian|south asian|chinese|indian)\\s+(neighbou?rhood|area|community|family|families)\\b"
+      ],
+      "fix": "Do not describe neighbours or buyers by background or faith. Describe distances to places instead."
+    },
+    {
+      "ground": "sex, sexual orientation or gender identity",
+      "patterns": [
+        "\\b(male|female|men|women|ladies|gentlemen) only\\b",
+        "\\bno (men|women|males|females)\\b"
+      ],
+      "fix": "Do not limit by sex or gender."
+    },
+    {
+      "ground": "receiving public assistance",
+      "patterns": [
+        "\\bno (odsp|ow|ontario works|welfare|social assistance|section 8)\\b",
+        "\\bmust be employed\\b"
+      ],
+      "fix": "You cannot refuse people because they receive public assistance. Remove the line."
+    }
+  ],
+  "claims_to_back_up": [
+    {
+      "rule": "Payment or rate claim",
+      "patterns": [
+        "\\$\\s?[\\d,]+(\\.\\d+)?\\s*(/\\s*|per\\s+|a\\s+|each\\s+)?(mo|month|monthly)\\b",
+        "\\b\\d+(\\.\\d+)?\\s?%\\s*(interest|rate|apr)\\b",
+        "\\bpre.?approved\\b",
+        "\\bguaranteed (approval|mortgage)\\b"
+      ],
+      "fix": "Payment, rate and approval claims must be true and backed up, with the conditions shown. Many brokerages avoid them in ads."
+    },
+    {
+      "rule": "Ranking or best-of claim",
+      "patterns": [
+        "(?<!\\w)#\\s?1\\b",
+        "\\bnumber one\\b",
+        "\\btop (agent|realtor|team)\\b",
+        "\\bbest (agent|realtor|team|price)\\b"
+      ],
+      "fix": "Ranking claims need proof you can show (what, where, when, who measured it), or take them out."
+    }
+  ],
+  "salesperson_titles": [
+    "Salesperson",
+    "Real Estate Salesperson",
+    "Sales Representative",
+    "Real Estate Agent",
+    "Real Estate Sales Representative",
+    "REALTOR® Salesperson",
+    "REALTOR®"
+  ],
+  "broker_titles": [
+    "Broker of Record",
+    "Broker Real Estate Agent",
+    "Real Estate Broker",
+    "REALTOR® Broker",
+    "Real Estate Agent",
+    "Broker",
+    "REALTOR®"
+  ],
+  "titles_note": "From RECO Bulletin 5.2. REALTOR® titles are only for CREA members in good standing. A broker of record must use \"Broker of Record\"."
+}
